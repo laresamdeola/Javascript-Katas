@@ -789,3 +789,10 @@ function solve(s){
 }
 
 */
+
+
+function isPalindrome(line) {
+  console.log(line.split('').reverse().join(''))
+}
+
+isPalindrome("annad")
