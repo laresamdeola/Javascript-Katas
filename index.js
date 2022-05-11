@@ -790,9 +790,41 @@ function solve(s){
 
 */
 
-
+/*
 function isPalindrome(line) {
   console.log(line.split('').reverse().join(''))
 }
 
 isPalindrome("annad")
+
+s[i] != 'a' || s[i] != 'b' || s[i] != 'c' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a' || s[i] != 'a'
+*/
+
+/*
+function getMiddle(s){
+  let sLength = s.length
+  let sArray = s.split("")
+  let middleChar = ""
+  if(sLength % 2 == 0){
+    let mids = sLength/2
+    let secondMids = mids+1
+    middleChar = sArray[mids - 1] + sArray[secondMids - 1]
+  } else{
+    let mids = Math.ceil((sLength/2))
+    middleChar = sArray[mids - 1]
+  }
+  console.log(middleChar)
+}
+
+getMiddle("t")
+*/
+
+
+function position(letter){
+  let position = {
+   'a': 1, 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 9: 'i'
+  }
+  console.log(`Position of alphabet: ${position[letter]}`)
+}
+
+position('a')
